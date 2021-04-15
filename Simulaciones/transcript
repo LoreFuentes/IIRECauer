@@ -1,0 +1,130 @@
+# Reading C:/modeltech64_10.5/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do compile_and_launch.tcl
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/CoefficientsROM.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:49 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/CoefficientsROM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CoefficientsROM
+# -- Compiling architecture DataFlow of CoefficientsROM
+# End time: 21:24:49 on Apr 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/CountDown.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:49 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/CountDown.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CountDown
+# -- Compiling architecture Behavioral of CountDown
+# End time: 21:24:49 on Apr 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/Counter.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:49 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/Counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Counter
+# -- Compiling architecture behavioral of Counter
+# End time: 21:24:49 on Apr 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/DigitalFilter.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:49 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/DigitalFilter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DigitalFilter
+# -- Compiling architecture Structural of DigitalFilter
+# End time: 21:24:50 on Apr 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/LatchSR.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:50 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/LatchSR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LatchSR
+# -- Compiling architecture Behavioral of LatchSR
+# End time: 21:24:50 on Apr 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/LoadRegister.vhd}
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 21:24:50 on Apr 14,2021
+# vcom -reportprogress 300 -work work G:/Mi unidad/UAQ/SDLR II/PROYECTO2/iir/IIREliptico/src/LoadRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LoadRegister
+# -- Compiling architecture Behavioral of LoadRegister
+# End time: 21:24:50 on Apr 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsimulink digitalfilter
+# vsim digitalfilter -foreign "simlinkserver {C:/Program Files/MATLAB/R2017a/toolbox/edalink/extensions/modelsim/windows64/liblfmhdls_gcc450vc12.dll} " 
+# Start time: 21:25:40 on Apr 14,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.digitalfilter(structural)#1
+# Loading C:/Program Files/MATLAB/R2017a/toolbox/edalink/extensions/modelsim/windows64/liblfmhdls_gcc450vc12.dll
+add wave -position end  sim:/digitalfilter/YOUT
+add wave -position end  sim:/digitalfilter/YK5
+add wave -position end  sim:/digitalfilter/YK4
+add wave -position end  sim:/digitalfilter/YK3
+add wave -position end  sim:/digitalfilter/YK2
+add wave -position end  sim:/digitalfilter/YK1
+add wave -position end  sim:/digitalfilter/XOUT
+add wave -position end  sim:/digitalfilter/XK5
+add wave -position end  sim:/digitalfilter/XK4
+add wave -position end  sim:/digitalfilter/XK3
+add wave -position end  sim:/digitalfilter/XK2
+add wave -position end  sim:/digitalfilter/XK1
+add wave -position end  sim:/digitalfilter/XK0
+add wave -position end  sim:/digitalfilter/XIN
+add wave -position end  sim:/digitalfilter/SYN
+add wave -position end  sim:/digitalfilter/SEL
+add wave -position end  sim:/digitalfilter/RSUM
+add wave -position end  sim:/digitalfilter/RST
+add wave -position end  sim:/digitalfilter/MULT
+add wave -position end  sim:/digitalfilter/EOC
+add wave -position end  sim:/digitalfilter/ENA
+add wave -position end  sim:/digitalfilter/EMUL
+add wave -position end  sim:/digitalfilter/CLK
+add wave -position end  sim:/digitalfilter/BOUT
+add wave -position end  sim:/digitalfilter/ACCU
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lore Fuentes  Hostname: DESKTOP-FPVJHUI  ProcessID: 6140
+#           Attempting to use alternate WLF file "./wlfts8q060".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts8q060
+force RST 0 0, 1 20 ns
+force CLK 1 0, 0 5 ns -repeat 10 ns
+force SYN 1 0, 0 10 ns -repeat 2 ms
+
+# Running Simulink Cosimulation block.
+# done
+# Simulation halt requested by foreign interface.
